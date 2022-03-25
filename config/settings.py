@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 import dj_database_url
 import django_heroku
+import sys
 
 # Initialise environment variables
 env = environ.Env()
@@ -17,7 +18,10 @@ SECRET_KEY = env('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG')
+if (len(sys.argv) >= 2 and sys.argv[1] == 'runserver'):
+    DEBUG = True
+else:
+    DEBUG = False
 
 ALLOWED_HOSTS = ['successhycenth.herokuapp.com']
 
