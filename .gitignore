@@ -1,0 +1,12 @@
+
+*.pyc
+/backend/config/.env
+.env.development
+.env.production
+.DS_Store
+.next/
+db.sqlite3
+media/ 
+/env/
+*/migrations/*
+!*/migrations/__init__.py
