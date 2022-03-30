@@ -11,7 +11,7 @@ class Works(models.Model):
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=200)
     link = models.CharField(max_length=250)
-    source = models.CharField(max_length=250, null=True, blank=True)
+    source = models.CharField(max_length=250)
     image = models.ImageField(upload_to='images')
     tags = models.ManyToManyField(Tag)
     id = models.AutoField(primary_key=True, unique=True)
