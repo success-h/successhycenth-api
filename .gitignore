@@ -7,6 +7,5 @@
 .next/
 db.sqlite3
 media/ 
-/env/
 */migrations/*
 !*/migrations/__init__.py
