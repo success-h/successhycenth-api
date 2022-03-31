@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import TechnologyListView
+from .views import TechnologyViewset
+from rest_framework.routers import DefaultRouter
 
-urlpatterns = [
-    path('', TechnologyListView.as_view()),
-]
+router = router = DefaultRouter(trailing_slash=False)
+router.register('', TechnologyViewset)
+urlpatterns = router.urls
