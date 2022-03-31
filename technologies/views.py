@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .serializers import TechnolofySerializer
+from .serializers import TechnologySerializer
 from .models import Technology
 
 # Create your views here.
 
 class TechnologyViewset(viewsets.ModelViewSet):
     queryset = Technology.objects.all()
-    serializer_class = TechnolofySerializer
+    serializer_class = TechnologySerializer
