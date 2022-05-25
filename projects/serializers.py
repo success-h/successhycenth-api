@@ -13,4 +13,4 @@ class ProjectSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Works
-        fields = ('name', 'description', 'link', 'image', 'tags')
+        fields = "__all__"
