@@ -23,7 +23,7 @@ if (len(sys.argv) >= 2 and sys.argv[1] == 'runserver'):
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = ['successhycenth.herokuapp.com']
+ALLOWED_HOSTS = ['successhycenth.herokuapp.com', 'localhost']
 
 
 # Application definition

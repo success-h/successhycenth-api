@@ -6,7 +6,7 @@ from .validators import validate_file_extension
 class About(models.Model):
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=250)
-    icon = models.FileField(upload_to='about/', null=True, blank=True, default=None, validators=[validate_file_extension])
+    icon = models.ImageField(upload_to='about/', null=True, blank=True, default=None, validators=[validate_file_extension])
 
     class Meta:
         verbose_name = 'About'
